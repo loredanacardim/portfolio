@@ -11,30 +11,15 @@ body {
   color: #f6f6f6;
 }
 
-.cabecalho {
-  padding: 2% 0% 0% 15%;
-}
-
-.cabecalho__menu {
-  display: flex;
-  gap: 80px;
-}
-
-.cabecalho__menu__link {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #ff0f35;
-  text-decoration: none;
-}
-
-.apresentacao {
-  padding: 5% 15%;
+.apresentacao__cv {
+  padding: 5%;
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Duas colunas com largura igual */
-  grid-gap: 10px;
+  grid-template-columns: repeat(
+    2,
+    1fr
+  ); /* define 2 colunas com a mesma largura */
+  gap: 20px;
   align-items: center;
-  gap: 82px;
 }
 
 .foto__perfil {
@@ -42,18 +27,19 @@ body {
   width: 40%;
 }
 
-.apresentacao__conteudo {
+/* .apresentacao__conteudo {
   width: calc(50% - 41px);
   display: flex;
   flex-direction: column;
   gap: 40px;
   text-align: justify;
-}
+} */
 
 .apresentacao__conteudo__titulo {
-  font-size: 1.75rem;
+  font-size: 2.25rem;
   font-family: 'Krona One', sans-serif;
   text-align: center;
+  padding: 5%;
 }
 
 .titulo-destaque {

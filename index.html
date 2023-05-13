@@ -6,16 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Loredana's Portfolio</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/responsivo.css" />
   </head>
+
   <body>
     <header class="cabecalho">
-      <nav class="cabecalho__menu">
-        <a class="cabecalho__menu__link" href="index.html">Home</a>
-        <a class="cabecalho__menu__link" href="about.html">About me</a>
-        <a class="cabecalho__menu__link" href="cv.html">CV</a>
-        <a class="cabecalho__menu__link" href="projetos.html">Projetos</a>
+      <nav class="opcoes">
+        <a class="container__link" href="index.html">Home</a>
+        <a class="container__link" href="about.html">About me</a>
+        <a class="container__link" href="projetos.html">Projetos</a>
+        <a class="container__link" href="index2.html">Projetos</a>
       </nav>
+
+      <div class="container">
+        <input type="checkbox" id="menu" class="container__botao"/>
+        <label for="menu" class="container__rotulo">
+          <span class="cabecalho__menu-hamburguer"></span>
+        </label>
+        <ul class="lista-menu">
+          <li class="lista-menu__item">
+            <a href="index.html" class="lista-menu__link">Home</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="about.html" class="lista-menu__link">About me</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="projetos.html" class="lista-menu__link">Projetos</a>
+          </li>
+        </ul>
+      </div>
     </header>
+    
     <main class="apresentacao">
       <section class="apresentacao__conteudo">
         <h1 class="apresentacao__conteudo__titulo">
@@ -29,7 +50,7 @@
           Hi! I'm Loredana Cardim, Front-end developer specializing in React,
           HTML and CSS. I help startups launch and grow their products. Can I help you?
         </p>
-        <h2 class="apresentacao__links_subtitulo">Contact Me:</h2>
+        <h2 class="apresentacao__links_subtitulo">My links:</h2>
         <div class="apresentacao__links">
           <a
             class="apresentacao__links__navegacao"
@@ -53,7 +74,7 @@
         />
     </main>
     <footer class="rodape">
-      <p>Desenvolvido com &#x01F90D por Loredana Cardim</p>
+      <p>Developed with &#x01F90D by Loredana Cardim</p>
     </footer>
   </body>
 </html>

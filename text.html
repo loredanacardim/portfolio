@@ -1,0 +1,1008 @@
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Meu portfolio usando HTML, CSS, SASS e React. Mostrando os meus projetos e minha evolução como desenvolvedor Frontend."
+    />
+    <meta name="keywords" content="HTML, CSS, SASS, React, Projetos" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Inline&amp;family=Inter:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Felipe Miranda Marreiros</title>
+    <script defer="defer" src="/static/js/main.74d0782a.js"></script>
+    <link href="/static/css/main.0985da66.css" rel="stylesheet" />
+    <style>
+      @font-face {
+        font-family: 'FontAwesome';
+        src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0');
+        src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0')
+            format('embedded-opentype'),
+          url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0')
+            format('woff2'),
+          url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0')
+            format('woff'),
+          url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0')
+            format('truetype'),
+          url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular')
+            format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+      /* vietnamese */
+      @font-face {
+        font-family: 'Asap';
+        font-style: italic;
+        font-weight: 400;
+        src: local('Asap Italic'), local('Asap-Italic'),
+          url(https://fonts.gstatic.com/s/asap/v9/KFOmCniXp96ayz4u7WxKOzY.woff2)
+            format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+      }
+      /* latin-ext */
+      @font-face {
+        font-family: 'Asap';
+        font-style: italic;
+        font-weight: 400;
+        src: local('Asap Italic'), local('Asap-Italic'),
+          url(https://fonts.gstatic.com/s/asap/v9/KFOmCniXp96ayz4u7GxKOzY.woff2)
+            format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      /* latin */
+      @font-face {
+        font-family: 'Asap';
+        font-style: italic;
+        font-weight: 400;
+        src: local('Asap Italic'), local('Asap-Italic'),
+          url(https://fonts.gstatic.com/s/asap/v9/KFOmCniXp96ayz4u4mxK.woff2)
+            format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      /* vietnamese */
+      @font-face {
+        font-family: 'Asap';
+        font-style: italic;
+        font-weight: 500;
+        src: local('Asap Medium Italic'), local('Asap-MediumItalic'),
+          url(https://fonts.gstatic.com/s/asap/v9/KFOlCniXp96ayz4mEU9fCxc4EsA.woff2)
+            format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+      }
+      /* latin-ext */
+      @font-face {
+        font-family: 'Asap';
+        font-style: italic;
+        font-weight: 500;
+        src: local('Asap Medium Italic'), local('Asap-MediumItalic'),
+          url(https://fonts.gstatic.com/s/asap/v9/KFOlCniXp96ayz4mEU9fChc4EsA.woff2)
+            format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      /* latin */
+      @font-face {
+        font-family: 'Asap';
+        font-style: italic;
+        font-weight: 500;
+        src: local('Asap Medium Italic'), local('Asap-MediumItalic'),
+          url(https://fonts.gstatic.com/s/asap/v9/KFOlCniXp96ayz4mEU9fBBc4.woff2)
+            format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      /* vietnamese */
+      @font-face {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Nunito Regular'), local('Nunito-Regular'),
+          url(https://fonts.gstatic.com/s/nunito/v10/XRXV3I6Li01BKofIOuaBXso.woff2)
+            format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+      }
+      /* latin-ext */
+      @font-face {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Nunito Regular'), local('Nunito-Regular'),
+          url(https://fonts.gstatic.com/s/nunito/v10/XRXV3I6Li01BKofIO-aBXso.woff2)
+            format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      /* latin */
+      @font-face {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Nunito Regular'), local('Nunito-Regular'),
+          url(https://fonts.gstatic.com/s/nunito/v10/XRXV3I6Li01BKofINeaB.woff2)
+            format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      /* vietnamese */
+      @font-face {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 800;
+        src: local('Nunito ExtraBold'), local('Nunito-ExtraBold'),
+          url(https://fonts.gstatic.com/s/nunito/v10/XRXW3I6Li01BKofAksCUbuvISTs.woff2)
+            format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+      }
+      /* latin-ext */
+      @font-face {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 800;
+        src: local('Nunito ExtraBold'), local('Nunito-ExtraBold'),
+          url(https://fonts.gstatic.com/s/nunito/v10/XRXW3I6Li01BKofAksCUb-vISTs.woff2)
+            format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      /* latin */
+      @font-face {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 800;
+        src: local('Nunito ExtraBold'), local('Nunito-ExtraBold'),
+          url(https://fonts.gstatic.com/s/nunito/v10/XRXW3I6Li01BKofAksCUYevI.woff2)
+            format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      /* vietnamese */
+      @font-face {
+        font-family: 'Muli';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Muli Regular'), local('Muli-Regular'),
+          url(https://fonts.gstatic.com/s/muli/v16/7Auwp_0qiz-afT3GLRrX.woff2)
+            format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+      }
+      /* latin-ext */
+      @font-face {
+        font-family: 'Muli';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Muli Regular'), local('Muli-Regular'),
+          url(https://fonts.gstatic.com/s/muli/v16/7Auwp_0qiz-afTzGLRrX.woff2)
+            format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      /* latin */
+      @font-face {
+        font-family: 'Muli';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Muli Regular'), local('Muli-Regular'),
+          url(https://fonts.gstatic.com/s/muli/v16/7Auwp_0qiz-afTLGLQ.woff2)
+            format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      /* cyrillic-ext */
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Roboto'), local('Roboto-Regular'),
+          url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu72xKOzY.woff2)
+            format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+      /* cyrillic */
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Roboto'), local('Roboto-Regular'),
+          url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu5mxKOzY.woff2)
+            format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+      /* greek-ext */
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Roboto'), local('Roboto-Regular'),
+          url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7mxKOzY.woff2)
+            format('woff2');
+        unicode-range: U+1F00-1FFF;
+      }
+      /* greek */
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Roboto'), local('Roboto-Regular'),
+          url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4WxKOzY.woff2)
+            format('woff2');
+        unicode-range: U+0370-03FF;
+      }
+      /* vietnamese */
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Roboto'), local('Roboto-Regular'),
+          url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7WxKOzY.woff2)
+            format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+      }
+      /* latin-ext */
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Roboto'), local('Roboto-Regular'),
+          url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7GxKOzY.woff2)
+            format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      /* latin */
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Roboto'), local('Roboto-Regular'),
+          url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2)
+            format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      /* devanagari */
+      @font-face {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Poppins Regular'), local('Poppins-Regular'),
+          url(https://fonts.gstatic.com/s/poppins/v8/pxiEyp8kv8JHgFVrJJbecmNE.woff2)
+            format('woff2');
+        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
+          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+      }
+      /* latin-ext */
+      @font-face {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Poppins Regular'), local('Poppins-Regular'),
+          url(https://fonts.gstatic.com/s/poppins/v8/pxiEyp8kv8JHgFVrJJnecmNE.woff2)
+            format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      /* latin */
+      @font-face {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Poppins Regular'), local('Poppins-Regular'),
+          url(https://fonts.gstatic.com/s/poppins/v8/pxiEyp8kv8JHgFVrJJfecg.woff2)
+            format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+    </style>
+    <style type="text/css">
+      @font-face {
+        font-weight: 400;
+        font-style: normal;
+        font-family: circular;
+
+        src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Regular.woff2')
+          format('woff2');
+      }
+
+      @font-face {
+        font-weight: 500;
+        font-style: normal;
+        font-family: circular;
+
+        src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Medium.woff2')
+          format('woff2');
+      }
+
+      @font-face {
+        font-weight: 700;
+        font-style: normal;
+        font-family: circular;
+
+        src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Bold.woff2')
+          format('woff2');
+      }
+
+      @font-face {
+        font-weight: 900;
+        font-style: normal;
+        font-family: circular;
+
+        src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Black.woff2')
+          format('woff2');
+      }
+    </style>
+  </head>
+  <body class="vsc-initialized">
+    <form
+      action="/pages/success"
+      classname="contact-section__form"
+      hidden=""
+      method="POST"
+      name="contact"
+    >
+      <input type="hidden" name="form-name" value="contact-form" />
+      <ul classname="contact-section__form-items">
+        <li>
+          <p classname="form-error">{formErrors.nome}</p>
+          <label htmlfor="name">Nome</label>
+          <input
+            id="name"
+            onchange="handleChange"
+            name="nome"
+            value="{formValues.nome}"
+          />
+        </li>
+        <li>
+          <p classname="form-error">{formErrors.email}</p>
+          <label htmlfor="mail">E-mail</label>
+          <input
+            type="email"
+            id="mail"
+            onchange="handleChange"
+            name="email"
+            value="{formValues.email}"
+          />
+        </li>
+        <li>
+          <p classname="form-error">{formErrors.assunto}</p>
+          <label htmlfor="subject">Assunto</label>
+          <input
+            id="subject"
+            onchange="handleChange"
+            name="assunto"
+            value="{formValues.assunto}"
+          />
+        </li>
+        <li>
+          <p classname="form-error">{formErrors.mensagem}</p>
+          <label htmlfor="msg">Mensagem</label>
+          <textarea
+            id="msg"
+            onchange="handleChange"
+            name="mensagem"
+            value="{formValues.mensagem}"
+          ></textarea>
+        </li>
+      </ul>
+      <button type="submit" classname="btn" title="Enviar">Enviar</button>
+    </form>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <nav class="navbar">
+        <span class="logo">Felipe Miranda</span>
+        <ul class="navbar__items">
+          <li><a href="#Sobre Mim">Sobre Mim</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Projetos">Projetos</a></li>
+          <li><a href="#Currículo ">Currículo </a></li>
+          <li><a href="#Contato">Contato</a></li>
+        </ul>
+        <button class="navbar__btns">
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 352 512"
+            class="navbar__menu"
+            name="close-outline"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+            ></path></svg
+          ><svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 448 512"
+            class="navbar__menu"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+            ></path>
+          </svg>
+        </button>
+      </nav>
+      <header class="hero">
+        <div class="container">
+          <div class="hero__content">
+            <section class="hero__content-text">
+              <h1 class="hero__content-text--title">
+                Olá, meu nome é
+                <span class="hero__content-text--name">Felipe Miranda</span>
+              </h1>
+              <p>
+                Seja bem-vindo ao meu portfolio. Todos os meus projetos estão
+                presentes aqui, bem como minha formação e o que estou estudando
+                atualmente.
+              </p>
+              <a href="#Projetos" class="hero-btn btn">Saiba Mais</a>
+            </section>
+            <div class="hero__content-img">
+              <img
+                src="/static/media/hero-vector-illustration.0d5ff036618ebcb893bef07f67346063.svg"
+                alt="Felipe Miranda Marreiros"
+                title="Felipe Miranda Marreiros"
+              />
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="about-me-section" id="Sobre Mim">
+          <section class="about-me-section__content container">
+            <div>
+              <img
+                src="/static/media/felipe-miranda-marreiros.9b7832c0442f2a4eca91.jpeg"
+                alt="Um foto de perfil com fundo branco"
+                class="about-me-section__content-img"
+              />
+            </div>
+            <div class="about-me-section__content-text">
+              <h2 class="about-me-section__content-text--title">Sobre Mim</h2>
+              <p>
+                Meu nome é Felipe Miranda Marreiros, tenho 24 anos e sou formado
+                em Gestão de Recursos Humanos pelo Instituto Federal de
+                Educação, Ciência e Tecnologia do Amapá.
+              </p>
+              <p>
+                Comecei estudar programação em outubro de 2021 e hoje faço parte
+                do programa Oracle Next Education.
+              </p>
+              <p>
+                Interessei-me por Front-End principalmente pela facilidade na
+                curva de aprendizagem e por ter gostado de CSS.
+              </p>
+            </div>
+          </section>
+        </div>
+        <div class="skills-section" id="Skills">
+          <div class="container">
+            <div class="skills-section__content">
+              <section class="skills-section__content-text">
+                <h2>Skills</h2>
+                <p>
+                  Como estou migrando para área de TI, não quis negligenciar os
+                  fundamentos, então comecei por HTML, CSS e JavaScript para
+                  então embarcar em uma framework.
+                </p>
+                <p>
+                  Atualmente estou estudando React pelo Scrimba e Udemy. Além
+                  das tecnologias abaixo, estou estudando Algoritmos e Estrutura
+                  de Dados.
+                </p>
+                <p>
+                  Quer ver minha evolução com HTML, CSS e JavaScript? Clique nos
+                  icones abaixo.
+                </p>
+                <div>
+                  <a
+                    href="https://github.com/felipe-miranda-marreiros/HTML"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><img
+                      src="https://img.icons8.com/color/480/000000/html-5--v1.png"
+                      alt="HTML"
+                      class="projects-section__skills-img" /></a
+                  ><a
+                    href="https://github.com/felipe-miranda-marreiros/CSS"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><img
+                      src="https://img.icons8.com/color/480/000000/css3.png"
+                      alt="HTML"
+                      class="projects-section__skills-img" /></a
+                  ><a
+                    href="https://github.com/felipe-miranda-marreiros/JavaScript"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><img
+                      src="https://img.icons8.com/color/480/000000/javascript--v1.png"
+                      alt="HTML"
+                      class="projects-section__skills-img"
+                  /></a>
+                </div>
+                <section>
+                  <h3>O futuro</h3>
+                  <p>
+                    JavaScript é a minha primeira linguagem de programação.
+                    Gostei como ela funciona por debaixo dos panos e futuramente
+                    espero estudar Node JS e TypeScript. Minha meta é ser
+                    FullStack quando tiver mais experiência.
+                  </p>
+                </section>
+              </section>
+              <div class="skills-section__content-img">
+                <img
+                  src="/static/media/undraw_programming_re_kg9v.0e33293004e28652317fd829ebeabb40.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="skills-section__items">
+              <img
+                src="https://img.icons8.com/color/480/000000/html-5--v1.png"
+                alt="HTML"
+                title="HTML"
+              /><img
+                src="https://img.icons8.com/color/480/000000/css3.png"
+                alt="CSS"
+                title="CSS"
+              /><img
+                src="https://img.icons8.com/color/480/000000/javascript--v1.png"
+                alt="JavaScript"
+                title="JavaScript"
+              /><img
+                src="https://img.icons8.com/color/480/000000/sass.png"
+                alt="SASS"
+                title="SASS"
+              /><img
+                src="https://img.icons8.com/color/480/000000/npm.png"
+                alt="NPM"
+                title="NPM"
+              /><img
+                src="https://img.icons8.com/color/480/000000/react-native.png"
+                alt="React"
+                title="React"
+              /><img
+                src="https://img.icons8.com/color/480/000000/git.png"
+                alt="Git"
+                title="Git"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="projects-section container" id="Projetos">
+          <div class="projects-section-container">
+            <h2>Projetos</h2>
+            <p>
+              Tenho feito projetos ligados a Front-End desde que aprendi CSS.
+              Utilizo, principalmente, Frontend Mentor para isso, além de
+              plataformas como Udemy, Scrimba e atualmente Oracle Next
+              Education. A seguir estão os meus projetos que mais gostei de
+              fazer.
+            </p>
+          </div>
+          <div class="projects-section__container">
+            <div class="projects-section__items">
+              <div class="projects-section-img__container">
+                <img
+                  src="https://cdn.sanity.io/images/146314kw/production/d5890b568979398d79ebf6bccfd7b22e3b0e7b8f-2560x1375.png"
+                  alt="Projeto"
+                  class="projects-section-img"
+                />
+              </div>
+              <div class="projects-section__skills">
+                <img
+                  src="https://img.icons8.com/color/480/000000/html-5--v1.png"
+                  alt="HTML"
+                  class="projects-section__skills-img"
+                /><img
+                  src="https://img.icons8.com/color/480/000000/css3.png"
+                  alt="HTML"
+                  class="projects-section__skills-img"
+                /><img
+                  src="https://img.icons8.com/color/480/000000/javascript--v1.png"
+                  alt="HTML"
+                  class="projects-section__skills-img"
+                />
+              </div>
+              <div class="projects-section__content">
+                <h3>Forkify</h3>
+                <p class="projects-section__content-description">
+                  É uma Single Page Application que permite o usuário buscar
+                  receitas (em inglês). Principal objetivo desse projeto é a
+                  utilização de conceitos como MVC, ES6 Modules, Event Handlers
+                  e o uso de Fetch API - Try, Catch.
+                </p>
+                <a
+                  class="btn"
+                  href="https://github.com/felipe-miranda-marreiros/Forkify"
+                  target="_blank"
+                  >Saiba Mais...</a
+                >
+              </div>
+            </div>
+            <div class="projects-section__items">
+              <div class="projects-section-img__container">
+                <img
+                  src="https://cdn.sanity.io/images/146314kw/production/6a570197e655c27ac2b6874dc7df104a5455d5a2-1264x920.png"
+                  alt="Projeto"
+                  class="projects-section-img"
+                />
+              </div>
+              <div class="projects-section__skills">
+                <img
+                  src="https://img.icons8.com/color/480/000000/html-5--v1.png"
+                  alt="HTML"
+                  class="projects-section__skills-img"
+                /><img
+                  src="https://img.icons8.com/color/480/000000/css3.png"
+                  alt="HTML"
+                  class="projects-section__skills-img"
+                /><img
+                  src="https://img.icons8.com/color/480/000000/javascript--v1.png"
+                  alt="HTML"
+                  class="projects-section__skills-img"
+                />
+              </div>
+              <div class="projects-section__content">
+                <h3>Mapty</h3>
+                <p class="projects-section__content-description">
+                  É um site que permite fazer track de exercícios físicos do
+                  usuário como corrida ou ciclismo. Foi utilizado a biblioteca
+                  Leaflet com Geolocation API e POO (ES6 Class) como forma de
+                  estruturar o código.
+                </p>
+                <a
+                  class="btn"
+                  href="https://github.com/felipe-miranda-marreiros/Mapty-App"
+                  target="_blank"
+                  >Saiba Mais...</a
+                >
+              </div>
+            </div>
+            <div class="projects-section__items">
+              <div class="projects-section-img__container">
+                <img
+                  src="https://cdn.sanity.io/images/146314kw/production/5e6659adda5e83c3a6e39b95f2be9b353c50f2d1-1188x787.png"
+                  alt="Projeto"
+                  class="projects-section-img"
+                />
+              </div>
+              <div class="projects-section__skills">
+                <img
+                  src="https://img.icons8.com/color/480/000000/html-5--v1.png"
+                  alt="HTML"
+                  class="projects-section__skills-img"
+                /><img
+                  src="https://img.icons8.com/color/480/000000/css3.png"
+                  alt="HTML"
+                  class="projects-section__skills-img"
+                /><img
+                  src="https://img.icons8.com/color/480/000000/javascript--v1.png"
+                  alt="HTML"
+                  class="projects-section__skills-img"
+                />
+              </div>
+              <div class="projects-section__content">
+                <h3>Intro Component Sign-Up</h3>
+                <p class="projects-section__content-description">
+                  Challenge também do Frontend Mentor. É um componente com
+                  apresentação e forms. Com ele, aprendi validação usando regex
+                  com JavaScript.
+                </p>
+                <a
+                  class="btn"
+                  href="https://github.com/felipe-miranda-marreiros/Frontend-Mentor-Challenges/tree/main/intro-component-with-signup-form-master"
+                  target="_blank"
+                  >Saiba Mais...</a
+                >
+              </div>
+            </div>
+            <div class="projects-section__items">
+              <div class="projects-section-img__container">
+                <img
+                  src="https://cdn.sanity.io/images/146314kw/production/40b3960164b35578641231a7b9e9dedf8fad534c-868x605.png"
+                  alt="Projeto"
+                  class="projects-section-img"
+                />
+              </div>
+              <div class="projects-section__skills">
+                <img
+                  src="https://img.icons8.com/color/480/000000/html-5--v1.png"
+                  alt="HTML"
+                  class="projects-section__skills-img"
+                /><img
+                  src="https://img.icons8.com/color/480/000000/css3.png"
+                  alt="HTML"
+                  class="projects-section__skills-img"
+                /><img
+                  src="https://img.icons8.com/color/480/000000/javascript--v1.png"
+                  alt="HTML"
+                  class="projects-section__skills-img"
+                />
+              </div>
+              <div class="projects-section__content">
+                <h3>Jogo da Forca</h3>
+                <p class="projects-section__content-description">
+                  Challenge proposto pelo programa Oracle Next. O intuíto é
+                  utilizar Vanilla JavaScript e DOM para fazer um jogo da forca.
+                </p>
+                <a
+                  class="btn"
+                  href="https://github.com/felipe-miranda-marreiros/jogo-da-forca"
+                  target="_blank"
+                  >Saiba Mais...</a
+                >
+              </div>
+            </div>
+            <div class="projects-section__items">
+              <div class="projects-section-img__container">
+                <img
+                  src="https://cdn.sanity.io/images/146314kw/production/36e2598c7a1126ecfe0c5dd46be49ce6d2df3d9d-1206x872.png"
+                  alt="Projeto"
+                  class="projects-section-img"
+                />
+              </div>
+              <div class="projects-section__skills">
+                <img
+                  src="https://img.icons8.com/color/480/000000/html-5--v1.png"
+                  alt="HTML"
+                  class="projects-section__skills-img"
+                /><img
+                  src="https://img.icons8.com/color/480/000000/css3.png"
+                  alt="HTML"
+                  class="projects-section__skills-img"
+                /><img
+                  src="https://img.icons8.com/color/480/000000/javascript--v1.png"
+                  alt="HTML"
+                  class="projects-section__skills-img"
+                />
+              </div>
+              <div class="projects-section__content">
+                <h3>Bankist App</h3>
+                <p class="projects-section__content-description">
+                  Principal objetivo desse projeto é a utilização de Higher
+                  Order Array Methods como Splice, Reduce, Sort, Find, Reduce.
+                  Bankist é um app que permite o usuário entrar com usuário e
+                  senha, e ver o seu saldo atual, saques e também pode excluir a
+                  conta.
+                </p>
+                <a
+                  class="btn"
+                  href="https://github.com/felipe-miranda-marreiros/Bankist-App"
+                  target="_blank"
+                  >Saiba Mais...</a
+                >
+              </div>
+            </div>
+            <div class="projects-section__items">
+              <div class="projects-section-img__container">
+                <img
+                  src="https://cdn.sanity.io/images/146314kw/production/59f840b0b46e5cbf26d726855fc346528fd8847f-1195x679.png"
+                  alt="Projeto"
+                  class="projects-section-img"
+                />
+              </div>
+              <div class="projects-section__skills">
+                <img
+                  src="https://img.icons8.com/color/480/000000/html-5--v1.png"
+                  alt="HTML"
+                  class="projects-section__skills-img"
+                /><img
+                  src="https://img.icons8.com/color/480/000000/css3.png"
+                  alt="HTML"
+                  class="projects-section__skills-img"
+                /><img
+                  src="https://img.icons8.com/color/480/000000/javascript--v1.png"
+                  alt="HTML"
+                  class="projects-section__skills-img"
+                />
+              </div>
+              <div class="projects-section__content">
+                <h3>Criptografar</h3>
+                <p class="projects-section__content-description">
+                  Challenge proposto pelo programa Oracle Next. Fazer um
+                  algoritmo que, de acordo com o input, permita criptografar uma
+                  palavra ou frase.
+                </p>
+                <a
+                  class="btn"
+                  href="https://github.com/felipe-miranda-marreiros/challenge-oracle-one"
+                  target="_blank"
+                  >Saiba Mais...</a
+                >
+              </div>
+            </div>
+            <div class="projects-section__items">
+              <div class="projects-section-img__container">
+                <img
+                  src="https://cdn.sanity.io/images/146314kw/production/31041c9c80847c931319a8ee37d71003ea1482a4-1079x732.png?rect=131,0,829,732"
+                  alt="Projeto"
+                  class="projects-section-img"
+                />
+              </div>
+              <div class="projects-section__skills">
+                <img
+                  src="https://img.icons8.com/color/480/000000/html-5--v1.png"
+                  alt="HTML"
+                  class="projects-section__skills-img"
+                /><img
+                  src="https://img.icons8.com/color/480/000000/css3.png"
+                  alt="HTML"
+                  class="projects-section__skills-img"
+                /><img
+                  src="https://img.icons8.com/color/480/000000/javascript--v1.png"
+                  alt="HTML"
+                  class="projects-section__skills-img"
+                />
+              </div>
+              <div class="projects-section__content">
+                <h3>Fylo</h3>
+                <p class="projects-section__content-description">
+                  Meu primeiro challenge nível júnior no Frontend Mentor. É uma
+                  Landing Page com Web Components como Hero, How it Works ,
+                  Testimonials, Form e Footer. Foi utilizado HTML, CSS e
+                  JavaScript.
+                </p>
+                <a
+                  class="btn"
+                  href="https://github.com/felipe-miranda-marreiros/fylo_landingPage"
+                  target="_blank"
+                  >Saiba Mais...</a
+                >
+              </div>
+            </div>
+            <div class="projects-section__items">
+              <div class="projects-section-img__container">
+                <img
+                  src="https://cdn.sanity.io/images/146314kw/production/8a16ff29ab2665873426026063e2c9fdc3593fc8-1044x545.png"
+                  alt="Projeto"
+                  class="projects-section-img"
+                />
+              </div>
+              <div class="projects-section__skills">
+                <img
+                  src="https://img.icons8.com/color/480/000000/html-5--v1.png"
+                  alt="HTML"
+                  class="projects-section__skills-img"
+                /><img
+                  src="https://img.icons8.com/color/480/000000/css3.png"
+                  alt="HTML"
+                  class="projects-section__skills-img"
+                /><img
+                  src="https://img.icons8.com/color/480/000000/javascript--v1.png"
+                  alt="HTML"
+                  class="projects-section__skills-img"
+                />
+              </div>
+              <div class="projects-section__content">
+                <h3>Omnifood</h3>
+                <p class="projects-section__content-description">
+                  É uma Lading Page com base em um app de delivery fictício,
+                  Omnifood. Foi utilizado HTML Semântico, Flexbox, Grid e
+                  Vanilla JavaScript. Além do uso de Web Components como Card,
+                  Forms e Testimonials.
+                </p>
+                <a
+                  class="btn"
+                  href="https://github.com/felipe-miranda-marreiros/Omnifood"
+                  target="_blank"
+                  >Saiba Mais...</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="contact" id="Contato">
+        <div class="contact-section container">
+          <section class="contact-section__content">
+            <h2>Curtiu?</h2>
+            <p>
+              Preencha o formulário a seguir e irei responder o mais breve
+              possível. Você pode me encontrar também em:
+            </p>
+            <div class="contact-section__links">
+              <a
+                href="https://github.com/felipe-miranda-marreiros"
+                target="_blank"
+                ><img
+                  src="https://img.icons8.com/glyph-neue/256/000000/github.png"
+                  alt="Github"
+                  title="Github" /></a
+              ><a
+                href="https://www.linkedin.com/in/felipe-miranda-marreiros/"
+                target="_blank"
+                ><img
+                  src="https://img.icons8.com/glyph-neue/256/000000/linkedin.png"
+                  alt="Linkedin"
+                  title="Linkedin"
+              /></a>
+            </div>
+            <div class="contact-section__content-img">
+              <img src="./img/undraw_interview_re_e5jn.svg" alt="" />
+            </div>
+          </section>
+          <form
+            class="contact-section__form"
+            method="POST"
+            name="contact-form"
+            netlify="true"
+            data-netlify="true"
+            action="/pages/success"
+          >
+            <ul class="contact-section__form-items">
+              <li>
+                <p class="form-error"></p>
+                <label for="name">Nome</label
+                ><input type="text" id="name" name="nome" value="" />
+              </li>
+              <li>
+                <p class="form-error"></p>
+                <label for="mail">E-mail</label
+                ><input type="email" id="mail" name="email" value="" />
+              </li>
+              <li>
+                <p class="form-error"></p>
+                <label for="subject">Assunto</label
+                ><input type="text" id="subject" name="assunto" value="" />
+              </li>
+              <li>
+                <p class="form-error"></p>
+                <label for="msg">Mensagem</label
+                ><textarea id="msg" name="mensagem"></textarea>
+              </li>
+            </ul>
+            <button type="submit" class="btn" title="Enviar">Enviar</button>
+          </form>
+        </div>
+      </div>
+      <footer class="footer-section">
+        <div class="footer-section__container container">
+          <section class="footer-section__content">
+            <h2 class="logo">Felipe Miranda</h2>
+            <p>
+              Desenvolvido por <span>Felipe Miranda</span> - 2022 . Todos os
+              direitos reservados, mas pode copiar se quiser. Quer saber como eu
+              fiz esse portfolio?
+              <a
+                href="https://github.com/felipe-miranda-marreiros/Portfolio"
+                target="_blank"
+                >Clique aqui.</a
+              >
+            </p>
+          </section>
+        </div>
+      </footer>
+    </div>
+    <div id="pexgle-extension-container" style="all: initial"></div>
+    <div id="pexgle-container"></div>
+    <div id="loom-companion-mv3" ext-id="liecbddmkiiihnedobmlmillhodjkdmb">
+      <section id="shadow-host-companion"></section>
+    </div>
+  </body>
+</html>

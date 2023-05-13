@@ -1,0 +1,11 @@
+.rodape {
+  padding: 10px;
+  color: var(--cor-de-fundo);
+  background-color: var(--rosa);
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  position: relative;
+  bottom: 0;
+}

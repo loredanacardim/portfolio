@@ -6,25 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV</title>
     <link rel="stylesheet" href="./styles/style_cv.css" />
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/responsivo.css">
   </head>
   <body>
     <header class="cabecalho">
-      <nav class="cabecalho__menu">
-        <a class="cabecalho__menu__link" href="index.html">Home</a>
-        <a class="cabecalho__menu__link" href="about.html">About me</a>
-        <a class="cabecalho__menu__link" href="cv.html">CV</a>
-        <a class="cabecalho__menu__link" href="projetos.html">Projetos</a>
+      <nav class="opcoes">
+        <a class="container__link" href="index.html">Home</a>
+        <a class="container__link" href="about.html">About me</a>
+        <a class="container__link" href="projetos.html">Projetos</a>
       </nav>
+
+      <div class="container">
+        <input type="checkbox" id="menu" class="container__botao"/>
+        <label for="menu" class="container__rotulo">
+          <span class="cabecalho__menu-hamburguer"></span>
+        </label>
+        <ul class="lista-menu">
+          <li class="lista-menu__item">
+            <a href="index.html" class="lista-menu__link">Home</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="about.html" class="lista-menu__link">About me</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="projetos.html" class="lista-menu__link">Projetos</a>
+          </li>
+        </ul>
+      </div>
     </header>
     <h1 class="apresentacao__conteudo__titulo">CV</h1>
-    <main class="apresentacao">
-      <img class="foto__perfil"
+    <main class="apresentacao__cv">
+      
+      <div class="apresentacao__conteudo">
+        <img class="foto__perfil"
       src="./assets/foto.png"
       alt="Minha foto de perfil"
     >
-      <section class="apresentacao__conteudo">
-      </section>
-      <h2 class="apresentacao__conteudo__titulo">Languages</h2>
+        <h2 class="apresentacao__conteudo__titulo">Languages</h2>
       <p class="apresentacao__conteudo__texto">
         <ul class="apresentacao__conteudo__texto">
           <li>Portuguese - Mother Tongue</li>
@@ -45,10 +64,10 @@
           <li>Git/Github</li>
         </ul>
       </p>
+      </div>
+      
 
-      <section class="apresentacao__conteudo">
-        
-      </section>
+      <div class="apresentacao__conteudo">
         <h2 class="apresentacao__conteudo__titulo">Professional Experience:</h2>
         <p class="apresentacao__conteudo__texto">
           <ul class="apresentacao__conteudo__texto">
@@ -87,10 +106,12 @@
           <p>Cheerleading athlete</p>
         </ul>
         </p>
+      </div>
+        
     
     </main>
     <footer class="rodape">
-      <p>Desenvolvido com &#x01F90D por Loredana Cardim</p>
+      <p>Developed with &#x01F90D by Loredana Cardim</p>
     </footer>
   </body>
 </html>

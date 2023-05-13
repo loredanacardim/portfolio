@@ -1,0 +1,20 @@
+.cabecalho {
+  padding: 2% 0% 0% 15%;
+}
+
+.opcoes {
+  display: flex;
+  gap: 80px;
+}
+
+.container__link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ff0f35;
+  text-decoration: none;
+}
+
+.container {
+  display: none;
+}

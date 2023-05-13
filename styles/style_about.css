@@ -11,23 +11,6 @@ body {
   color: #f6f6f6;
 }
 
-.cabecalho {
-  padding: 2% 0% 0% 15%;
-}
-
-.cabecalho__menu {
-  display: flex;
-  gap: 80px;
-}
-
-.cabecalho__menu__link {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #ff0f35;
-  text-decoration: none;
-}
-
 .apresentacao {
   padding: 5% 15%;
   display: block;
@@ -75,20 +58,4 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
-}
-
-@media (max-width: 1200px) {
-  .cabecalho {
-    padding: 10%;
-  }
-  .cabecalho__menu {
-    justify-content: center;
-  }
-  .apresentacao {
-    flex-direction: column-reverse;
-    padding: 5%;
-  }
-  .apresentacao__conteudo {
-    width: auto;
-  }
 }

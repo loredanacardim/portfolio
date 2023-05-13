@@ -4,16 +4,160 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/projetos.css" />
     <title>Projetos</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/projetos.css" />
+    <link rel="stylesheet" href="./styles/responsivo.css" />
+    
   </head>
-  <header class="cabecalho">
-    <nav class="cabecalho__menu">
-      <a class="cabecalho__menu__link" href="index.html">Home</a>
-      <a class="cabecalho__menu__link" href="about.html">About me</a>
-      <a class="cabecalho__menu__link" href="cv.html">CV</a>
-      <a class="cabecalho__menu__link" href="projetos.html">Projetos</a>
-    </nav>
-  </header>
-  <body></body>
+  <body>
+    <header class="cabecalho">
+      <nav class="opcoes">
+        <a class="container__link" href="index.html">Home</a>
+        <a class="container__link" href="about.html">About me</a>
+        <a class="container__link" href="projetos.html">Projects</a>
+      </nav>
+
+      <div class="container">
+        <input type="checkbox" id="menu" class="container__botao"/>
+        <label for="menu" class="container__rotulo">
+          <span class="cabecalho__menu-hamburguer"></span>
+        </label>
+        <ul class="lista-menu">
+          <li class="lista-menu__item">
+            <a href="index.html" class="lista-menu__link">Home</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="about.html" class="lista-menu__link">About me</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="projetos.html" class="lista-menu__link">Projects</a>
+          </li>
+        </ul>
+      </div>
+
+    </header>
+    <main class="oi">
+      <h2 class="secao__titulo">P r o j e c t s</h2>
+      <p class="secao__paragrafo">As a front-end developer, my current focus of study is on designing and building engaging and user-friendly web experiences. I am continually honing my skills in HTML, CSS, and JavaScript to create responsive and optimized web pages that deliver a seamless user experience. I am always seeking to learn new tools and techniques to enhance my abilities and stay at the forefront of the rapidly evolving front-end development landscape. My goal is to create websites and web applications that not only meet but exceed user expectations and drive results for my clients. </p>
+      <p class="secao__paragrafo">While my programming journey began with learning C++ and I have a vast knowledge of the language, it is not my current focus.  Nonetheless, my experience with C++ has given me a solid understanding of programming concepts, data structures, and algorithms, which I apply to my front-end development work to create robust, efficient, and effective web applications.</p>
+  
+      <div class="projetos projetos-vertical">
+        <h3 class="titulo__projetos">HTML & CSS</h3>
+        <ul class="secao__cartoes">
+          <li class="cartao">
+            <img
+              class="cartao__imagem"
+              src="./assets/AluraBooks.jpg"
+              alt="Projeto Alura Books"
+            />
+            <h3 class="cartao__titulo">Alura Books</h3>
+            <h4 class="cartao__subtitulo">Created as part of the Front-End Development training program at Alura, an education and technology school.</h4>
+            <a class="botao" href="https://github.com/loredanacardim/alurabook" target="_blank">Read More</a>
+          </li>
+          <li class="cartao">
+            <img
+              class="cartao__imagem"
+              src="./assets/AluraBooks.jpg"
+              alt="Projeto Alura Books"
+            />
+            <h3 class="cartao__titulo">Alura Plus</h3>
+            <h4 class="cartao__subtitulo">Created as part of the Front-End Development training program at Alura, an education and technology school.</h4>
+            <a class="botao" href="https://alura-plus-orcin-eta.vercel.app/" target="_blank">Read More</a>
+          </li>
+          <li class="cartao">
+            <img
+              class="cartao__imagem"
+              src="./assets/AluraBooks.jpg"
+              alt="Projeto Alura Books"
+            />
+            <h3 class="cartao__titulo">Alura Books</h3>
+            <h4 class="cartao__subtitulo">Projeot realizado pipipi</h4>
+            <a class="botao" href="" target="_blank">Read More</a>
+          </li>
+          <li class="cartao">
+            <img
+              class="cartao__imagem"
+              src="./assets/AluraBooks.jpg"
+              alt="Projeto Alura Books"
+            />
+            <h3 class="cartao__titulo">Alura Books</h3>
+            <h4 class="cartao__subtitulo">Projeot realizado pipipi</h4>
+            <a class="botao" href="" target="_blank">Read More</a>
+          </li>
+       
+          <li class="cartao">
+            <img
+              class="cartao__imagem"
+              src="./assets/AluraBooks.jpg"
+              alt="Projeto Alura Books"
+            />
+            <h3 class="cartao__titulo">Alura Books</h3>
+            <h4 class="cartao__subtitulo">Projeot realizado pipipi</h4>
+            <a class="botao" href="" target="_blank">Read More</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="projetos projetos-vertical">
+        <h3 class="titulo__projetos">C++</h3>
+        <ul class="secao__cartoes">
+          <li class="cartao">
+            <img
+              class="cartao__imagem"
+              src="./assets/AluraBooks.jpg"
+              alt="Projeto Alura Books"
+            />
+            <h3 class="cartao__titulo">Dairy Cow</h3>
+            <h4 class="cartao__subtitulo">Projeot realizado pipipi</h4>
+            <a class="botao" href="https://github.com/loredanacardim/vaca-leiteira" target="_blank">Read More</a>
+          </li>
+          <li class="cartao">
+            <img
+              class="cartao__imagem"
+              src="./assets/AluraBooks.jpg"
+              alt="Projeto Alura Books"
+            />
+            <h3 class="cartao__titulo">Alura Books</h3>
+            <h4 class="cartao__subtitulo">Projeot realizado pipipi</h4>
+            <a class="botao" href="" target="_blank">Read More</a>
+          </li>
+          <li class="cartao">
+            <img
+              class="cartao__imagem"
+              src="./assets/AluraBooks.jpg"
+              alt="Projeto Alura Books"
+            />
+            <h3 class="cartao__titulo">Alura Books</h3>
+            <h4 class="cartao__subtitulo">Projeot realizado pipipi</h4>
+            <a class="botao" href="" target="_blank">Read More</a>
+          </li>
+          <li class="cartao">
+            <img
+              class="cartao__imagem"
+              src="./assets/AluraBooks.jpg"
+              alt="Projeto Alura Books"
+            />
+            <h3 class="cartao__titulo">Alura Books</h3>
+            <h4 class="cartao__subtitulo">Projeot realizado pipipi</h4>
+            <a class="botao" href="" target="_blank">Read More</a>
+          </li>
+       
+          <li class="cartao">
+            <img
+              class="cartao__imagem"
+              src="./assets/AluraBooks.jpg"
+              alt="Projeto Alura Books"
+            />
+            <h3 class="cartao__titulo">Alura Books</h3>
+            <h4 class="cartao__subtitulo">Projeot realizado pipipi</h4>
+            <a class="botao" href="" target="_blank">Read More</a>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer class="rodape">
+      <p>Developed with &#x01F90D by Loredana Cardim</p>
+    </footer>
+  </body>
 </html>
